@@ -12,8 +12,9 @@ body{
 
 .container{
     max-width: 1200px;
-    margin: 25px auto;
+    margin: 20px auto;
     justify-content: space-between;
+    height: 20px;
 }
 
 .nav{
@@ -24,8 +25,6 @@ body{
     right: 0;
     transition: all 0.3s ease-in-out;
     color: aliceblue;
-
-
 }
 
 .nav .container{
@@ -33,7 +32,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-   
+    
 }
 
 .nav ul{
@@ -55,6 +54,23 @@ body{
     color: red;
 }
 
+.nav h1{
+    font-size: 30px;
+}
+
+.nav.active{
+    background-color: aliceblue;
+    color: #222;
+}
+
+.nav.active a{
+    color: #222;
+}
+
+.nav.active a:hover{
+    background-color: aliceblue;
+    color: rgb(226, 38, 38);
+}
 
 
 .hero{
@@ -64,6 +80,7 @@ body{
     background-position: bottom center;
     color: aliceblue;
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -95,6 +112,8 @@ body{
     font-size: 25px;
     letter-spacing: 1px;
 }
+
+
 
 .content h2{
     font-size: 150%;
